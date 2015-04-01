@@ -1,0 +1,10 @@
+PLL_Name	pll:div|altpll:altpll_component|pll
+PLLJITTER	30
+PLLSPEmax	84
+PLLSPEmin	-53
+
+PLL_Name	VGA_Audio_PLL:p1|altpll:altpll_component|altpll_k3n2:auto_generated|pll1
+PLLJITTER	30
+PLLSPEmax	84
+PLLSPEmin	-53
+

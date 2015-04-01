@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.579 ns
+From           : ps2_data
+To             : PS2_Interface:myps2|PS2_Controller:PS2|ps2_data_reg
+From Clock     : --
+To Clock       : inclock
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 15.808 ns
+From           : processor:myprocessor|LMW:LMW1|regnb:regnb1|myDFF:myDFFs[5].a_DFF|q
+To             : debug_word[27]
+From Clock     : inclock
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.575 ns
+From           : resetn
+To             : PS2_Interface:myps2|PS2_Controller:PS2|ps2_data_reg
+From Clock     : --
+To Clock       : inclock
+Failed Paths   : 0
+
+Type           : Clock Setup: 'inclock'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 26.27 MHz ( period = 38.066 ns )
+From           : processor:myprocessor|LMW:LMW1|regnb:regnb1|myDFF:myDFFs[3].a_DFF|q
+To             : processor:myprocessor|execute:execute1|multdiv:multdiv1|product_reg:product_reg1|regnb:reg_1|myDFF:myDFFs[71].a_DFF|q
+From Clock     : inclock
+To Clock       : inclock
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

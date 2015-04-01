@@ -1,0 +1,1306 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/14.1
+vadd_premult
+Z0 !s110 1427573097
+!i10b 1
+!s100 4Md[XN38iChHEJoK7COWE0
+IO0H^Q0DcKbNATdLfl?oU30
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/processorTSim
+Z3 w1427160698
+Z4 8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/multdiv.v
+Z5 FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/multdiv.v
+L0 247
+Z6 OV;L;10.3c;59
+r1
+!s85 0
+31
+Z7 !s108 1427573097.352000
+Z8 !s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/multdiv.v|
+Z9 !s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/multdiv.v|
+!i113 1
+Z10 o-work processorTSim
+vaddsub
+Z11 !s110 1427573096
+!i10b 1
+!s100 @BznF1EOfT;53[:^^Ah1n1
+I;]k]5V[BQ`NO_nfJcLQkS3
+R1
+R2
+Z12 w1427160515
+Z13 8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/alu.v
+Z14 FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/alu.v
+Z15 L0 32
+R6
+r1
+!s85 0
+31
+Z16 !s108 1427573096.592000
+Z17 !s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/alu.v|
+Z18 !s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/alu.v|
+!i113 1
+R10
+vaddsub_s
+R0
+!i10b 1
+!s100 T[`5]R29oSo7W2RfHB`@j0
+I4O>U=k9DHSoYBcT>;<6311
+R1
+R2
+R3
+R4
+R5
+L0 180
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vAltera_UP_PS2_Command_Out
+R11
+!i10b 1
+!s100 bOEZ0g]NoUMR5R9GMM7<D0
+IeRb=M:5Oh6IfWQ3YOnY131
+R1
+R2
+w1394236446
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/Altera_UP_PS2_Command_Out.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/Altera_UP_PS2_Command_Out.v
+Z19 L0 10
+R6
+r1
+!s85 0
+31
+!s108 1427573096.482000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/Altera_UP_PS2_Command_Out.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/Altera_UP_PS2_Command_Out.v|
+!i113 1
+R10
+n@altera_@u@p_@p@s2_@command_@out
+vAltera_UP_PS2_Data_In
+R11
+!i10b 1
+!s100 T599Cd9hYA]oSKmF16ROl2
+I[:KTKMEMVflaeY88M5HB`1
+R1
+R2
+w1394236455
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/Altera_UP_PS2_Data_In.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/Altera_UP_PS2_Data_In.v
+R19
+R6
+r1
+!s85 0
+31
+!s108 1427573096.542000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/Altera_UP_PS2_Data_In.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/Altera_UP_PS2_Data_In.v|
+!i113 1
+R10
+n@altera_@u@p_@p@s2_@data_@in
+valu
+R11
+!i10b 1
+!s100 @J@To_ZIU18EXL5JTcaNg1
+IXhUKX0;]5>>7<Co[Vn8DO1
+R1
+R2
+R12
+R13
+R14
+L0 1
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+vand32b
+R11
+!i10b 1
+!s100 TGoWQm72V]:BX]dOzA<Jd3
+IXaFbX9iE=8a5D6Sgj1<5m2
+R1
+R2
+R12
+R13
+R14
+L0 171
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+vbooth_recode
+R0
+!i10b 1
+!s100 miVX6g_FMX`<7;MBP6VMg1
+I<@:A6dj`k[FZdPZMgo6S_0
+R1
+R2
+R3
+R4
+R5
+L0 154
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vbypass
+R11
+!i10b 1
+!s100 9=LDmO]U]Lh4QCG4bO68b3
+I0mU6mkE>fdT:NbRcI_P?_3
+R1
+R2
+w1427560149
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/bypass.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/bypass.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1427573096.722000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/bypass.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/bypass.v|
+!i113 1
+R10
+vcorrect_sign
+R0
+!i10b 1
+!s100 IDo3@^?>8n<MmLENXCMID0
+IWbkD8mm_@NP=MAKeDDVY@0
+R1
+R2
+R3
+R4
+R5
+L0 492
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vcsa32b
+R11
+!i10b 1
+!s100 anK53aChmJ^GPmhI>>Ibb0
+Ie1KeAiIeC04OX;G0k;ZVb1
+R1
+R2
+R12
+R13
+R14
+L0 54
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+vcsa40b
+R0
+!i10b 1
+!s100 378kS;H@<mmg_DFl<4XQG3
+IHc7Z>_AC6Gma:=0IV1@3F3
+R1
+R2
+R3
+R4
+R5
+L0 274
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vdec2to4
+R0
+!i10b 1
+!s100 ^6ZKje9A9nB87DzQ^ffU^1
+I=6JUIa284f2iV7P<iekS60
+R1
+R2
+Z20 w1427379896
+Z21 8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/regfile.v
+Z22 FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/regfile.v
+L0 88
+R6
+r1
+!s85 0
+31
+Z23 !s108 1427573097.602000
+Z24 !s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/regfile.v|
+Z25 !s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/regfile.v|
+!i113 1
+R10
+vdec3to8
+R0
+!i10b 1
+!s100 3d7::CTL_=[WL8RnnE?Xb2
+IBGJEgQa:eifkP1HA4bhV_0
+R1
+R2
+R20
+R21
+R22
+L0 73
+R6
+r1
+!s85 0
+31
+R23
+R24
+R25
+!i113 1
+R10
+vdec5to32
+R0
+!i10b 1
+!s100 ZYP5];7f9_C@z[78i;8Kb0
+ISJ1SS;:A^8<bWJnEY3g5b2
+R1
+R2
+R20
+R21
+R22
+L0 61
+R6
+r1
+!s85 0
+31
+R23
+R24
+R25
+!i113 1
+R10
+vdecode
+R11
+!i10b 1
+!s100 ZG;_3D@L8Z7Y]^cnRNZ473
+I:e:_2Z]=Cj`9c7V9olTmf1
+R1
+R2
+w1427568152
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/decode.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/decode.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1427573096.782000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/decode.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/decode.v|
+!i113 1
+R10
+vdivFSM
+R0
+!i10b 1
+!s100 L4fBR9nC8af2i6?KfMWEe1
+IDdB<FD07AUT4aoM__iDRz3
+R1
+R2
+R3
+R4
+R5
+L0 318
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+ndiv@f@s@m
+vdividebyzero
+R0
+!i10b 1
+!s100 nhdGaY?N9o<?_><NYVTRi0
+Ioh179KoCoQ^gWhS@5L;Nb2
+R1
+R2
+R3
+R4
+R5
+L0 565
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vdivisor_reg
+R0
+!i10b 1
+!s100 `MA?kHOaJmZfm6<M2?lf<1
+IK9_V__Dla;SzkF=nCF4ZD1
+R1
+R2
+R3
+R4
+R5
+L0 423
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vdmem
+R11
+!i10b 1
+!s100 [oQX99daP[gfaILg4jW1R0
+I5X<C?BTVh[B=gk>k`hRfo0
+R1
+R2
+w1394484155
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/dmem.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/dmem.v
+Z26 L0 39
+R6
+r1
+!s85 0
+31
+!s108 1427573096.832000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/dmem.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/dmem.v|
+!i113 1
+R10
+vexecute
+R11
+!i10b 1
+!s100 c><=k8l4SVCCR<8RNXRoF0
+I?AV^Sehk9F6UOHWFVZKYB1
+R1
+R2
+w1427554917
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/execute.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/execute.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1427573096.882000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/execute.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/execute.v|
+!i113 1
+R10
+vfetch
+R11
+!i10b 1
+!s100 lJ4>6l[F4ZL6YCEHmiD991
+Ibl90MYXEQ[hbP^:Plcd]a3
+R1
+R2
+w1427564999
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/fetch.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/fetch.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1427573096.942000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/fetch.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/fetch.v|
+!i113 1
+R10
+vGcomb
+R11
+!i10b 1
+!s100 3f[jcBHmNUK5>BJ@;JbPf2
+I0gL3DoKlde9]zORXO>1NL0
+R1
+R2
+R12
+R13
+R14
+L0 153
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+n@gcomb
+vGP
+R11
+!i10b 1
+!s100 V3M^ca[AFbJkN<^okbI^a1
+IGQCmZjD2CH2gQ5Z^ImSNf1
+R1
+R2
+R12
+R13
+R14
+L0 162
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+n@g@p
+vGPcomb
+R11
+!i10b 1
+!s100 g?AJh1J[UUFb?2Tc[aPzR3
+IR0:j?^I`eGce2NBb`f3[83
+R1
+R2
+R12
+R13
+R14
+L0 143
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+n@g@pcomb
+vHexadecimal_To_Seven_Segment
+R0
+!i10b 1
+!s100 >j7dlo6D<6b_bXMV;SleR2
+IOjAC<G]Wd@[J5n>Ja`aFn3
+R1
+R2
+w1394236462
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/Hexadecimal_To_Seven_Segment.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/Hexadecimal_To_Seven_Segment.v
+L0 9
+R6
+r1
+!s85 0
+31
+!s108 1427573096.992000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/Hexadecimal_To_Seven_Segment.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/Hexadecimal_To_Seven_Segment.v|
+!i113 1
+R10
+n@hexadecimal_@to_@seven_@segment
+vimem
+R0
+!i10b 1
+!s100 627K1OI7QBf=k^b?A31S?0
+I]9;gcC_X>0`^Z;eC6F=Xb0
+R1
+R2
+w1394483558
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/imem.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/imem.v
+R26
+R6
+r1
+!s85 0
+31
+!s108 1427573097.042000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/imem.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/imem.v|
+!i113 1
+R10
+vks8b
+R11
+!i10b 1
+!s100 gfP6`CJL3[8XI?K78blDm2
+IPn2Q9EG84^jB1COEdZ]FS1
+R1
+R2
+R12
+R13
+R14
+L0 92
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+vks8bMux
+R11
+!i10b 1
+!s100 nPJQimE]1G?;YK9ohG=VD3
+I[ZCOnL@4XA=IJ;4VA@oN50
+R1
+R2
+R12
+R13
+R14
+L0 70
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+nks8b@mux
+vLDX
+R0
+!i10b 1
+!s100 2P1d=2>:ba`;=DW?F]?Fo1
+IUl^zcmMob=ebfTOlidLGC2
+R1
+R2
+w1427566589
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LDX.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LDX.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1427573097.092000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LDX.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LDX.v|
+!i113 1
+R10
+n@l@d@x
+vLFD
+R0
+!i10b 1
+!s100 8RdM6[`SZPk8ofJgXR@<<0
+I9U]GGE_>K9jXSc>UkAL@M1
+R1
+R2
+w1427566601
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LFD.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LFD.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1427573097.142000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LFD.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LFD.v|
+!i113 1
+R10
+n@l@f@d
+vLMW
+R0
+!i10b 1
+!s100 c10KO]Q@QiYL^``F4eOcI0
+I3bUfXPZ7kDCP=LmNCK@Md1
+R1
+R2
+w1427344724
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LMW.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LMW.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1427573097.192000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LMW.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LMW.v|
+!i113 1
+R10
+n@l@m@w
+vLXM
+R0
+!i10b 1
+!s100 H7TfU`Aa1Q3]R<TZJGb1=1
+IKnUznzEJUd03_X9]OnChR1
+R1
+R2
+w1427566496
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LXM.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LXM.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1427573097.242000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LXM.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/LXM.v|
+!i113 1
+R10
+n@l@x@m
+vmemory
+R0
+!i10b 1
+!s100 iHRn4=RAU:Plc@noEOZZW2
+I>EUP5nbZcgmdaF1HeUfSR0
+R1
+R2
+w1427378402
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/memory.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/memory.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1427573097.302000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/memory.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/memory.v|
+!i113 1
+R10
+vmultdiv
+R0
+!i10b 1
+!s100 LIPfbzdQa7G93P?:OF93T3
+Ik9W5EBFG]9`e??b[z3m_K1
+R1
+R2
+R3
+R4
+R5
+L0 15
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vmultFSM
+R0
+!i10b 1
+!s100 <i8ff[jj<]^:0LEefB2Gj2
+I:RHOdd]l6Lc00@]5fWW<b2
+R1
+R2
+R3
+R4
+R5
+L0 90
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+nmult@f@s@m
+vmultiplicand_reg
+R0
+!i10b 1
+!s100 P^ZU?F<:39ebjFmo`P1Ro0
+Ic=6Gh3W9SaI<`NogQiDOz2
+R1
+R2
+R3
+R4
+R5
+L0 117
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vmyDFF
+R11
+!i10b 1
+!s100 8]QUhYUiCPo<iXgDBce@k2
+Ii4T63H3^mAA:Qz<hNd^PT2
+R1
+R2
+Z27 w1427242706
+Z28 8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/basic.v
+Z29 FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/basic.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z30 !s108 1427573096.672000
+Z31 !s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/basic.v|
+Z32 !s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/basic.v|
+!i113 1
+R10
+nmy@d@f@f
+vor32b
+R11
+!i10b 1
+!s100 g34nJODk<_doTIohoKo<`3
+IAzELbiW>?PP[[`l?cFzjf2
+R1
+R2
+R12
+R13
+R14
+L0 179
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+vpll
+R0
+!i10b 1
+!s100 SF0f3S7YbV`Ae5l3KS2M;0
+IhRaKi@]kzG3HAHgDgM]o=2
+R1
+R2
+w1394485019
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/pll.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/pll.v
+R26
+R6
+r1
+!s85 0
+31
+!s108 1427573097.442000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/pll.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/pll.v|
+!i113 1
+R10
+vpremult
+R0
+!i10b 1
+!s100 1c3^=]0fAV:o<kcZSL`DJ1
+Ie9o8TC[2e6h74<>YEIddl2
+R1
+R2
+R3
+R4
+R5
+L0 204
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vprocessor
+R0
+!i10b 1
+!s100 4dZ@O5OU[<kh<oY?^iMf?3
+IWG>F36KQXN0TRT9jEkL4h1
+R1
+R2
+w1427572400
+8C:\Users\Jianan Li\Documents\Altera Projects\HW5_Processor\processor.v
+FC:\Users\Jianan Li\Documents\Altera Projects\HW5_Processor\processor.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1427573097.502000
+!s107 C:\Users\Jianan Li\Documents\Altera Projects\HW5_Processor\processor.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:\Users\Jianan Li\Documents\Altera Projects\HW5_Processor\processor.v|
+!i113 1
+R10
+vproduct_reg
+R0
+!i10b 1
+!s100 TCL_=3BSkQ:ULlOdPHa2J0
+I6EVQkDozFoe6Xd[>J=1Cm1
+R1
+R2
+R3
+R4
+R5
+L0 134
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vPS2_Interface
+R0
+!i10b 1
+!s100 _YLVn<IZ1=BKMoSMgomkl0
+IBo:G2VSVoNoh8l^2@H5hl0
+R1
+R2
+w1394312441
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/PS2_Interface.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/PS2_Interface.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1427573097.562000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/PS2_Interface.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/PS2_Interface.v|
+!i113 1
+R10
+n@p@s2_@interface
+vquotient_reg
+R0
+!i10b 1
+!s100 G;;CdJB_hf]LOb_D<aEz61
+I_79kiXa<HcPzz7D7Wc57z0
+R1
+R2
+R3
+R4
+R5
+L0 436
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vregfile
+R0
+!i10b 1
+!s100 1Ho^LE_0KOl[WZ89?6UCJ1
+IKVZZ9O_[IJ`oE8oQLUSU10
+R1
+R2
+R20
+R21
+R22
+L0 1
+R6
+r1
+!s85 0
+31
+R23
+R24
+R25
+!i113 1
+R10
+vregnb
+R11
+!i10b 1
+!s100 ^dKf7WzgoH@Ujzada8I^Z3
+I5h;W5d0M24llnW8?2O_Oz1
+R1
+R2
+R27
+R28
+R29
+L0 16
+R6
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 1
+R10
+vremainder_reg
+R0
+!i10b 1
+!s100 kVOF9nQ4mkICJVSf?@LOO2
+I6c9_1z<0FSddTOP@XULan1
+R1
+R2
+R3
+R4
+R5
+L0 382
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vresult_correct_sign
+R0
+!i10b 1
+!s100 ;RJLE8=:Gn0>49l^30W8o0
+I2Y9PjFYdNo]?coid@4z0^1
+R1
+R2
+R3
+R4
+R5
+L0 534
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vshift_dividend
+R0
+!i10b 1
+!s100 ClPJG;:R63`?ki6_L46z`1
+IO3=K<N6;jg3Licaj:o`hW0
+R1
+R2
+R3
+R4
+R5
+L0 505
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vsign_reg
+R0
+!i10b 1
+!s100 OGVj@d@=:S^R4SG0NTC1Y1
+IH6^UR3lLLXFTF<`fWm>Ez0
+R1
+R2
+R3
+R4
+R5
+L0 458
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vskeleton
+!s110 1427573098
+!i10b 1
+!s100 ?gQPHkQG?U9W:VP]9HHMQ0
+ITbB0H0@T<m2>cE9aahfbo3
+R1
+R2
+w1427571810
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/simulation/modelsim/skeleton_6_1200mv_85c_slow.vo
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/simulation/modelsim/skeleton_6_1200mv_85c_slow.vo
+R15
+R6
+r1
+!s85 0
+31
+!s108 1427573097.853000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/simulation/modelsim/skeleton_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/simulation/modelsim/skeleton_6_1200mv_85c_slow.vo|
+!i113 1
+R10
+vsll
+R11
+!i10b 1
+!s100 ?LFHhKXNA8MYFAU:fOkHh1
+I2>YfIEZ8hI[Qn]`aYI86W1
+R1
+R2
+R12
+R13
+R14
+L0 218
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+vsllnb
+R11
+!i10b 1
+!s100 nkFLb51ZER1`15oOi0?8J2
+ILb=U@ce9ndc64ba]J`:zj2
+R1
+R2
+R12
+R13
+R14
+L0 187
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+vsllnb_40b_ae
+R0
+!i10b 1
+!s100 G=VA2F8mJEg;E=23cQ:Ue1
+IeEm6=7Wm4DK?bLS<=2d_;3
+R1
+R2
+R3
+R4
+R5
+L0 293
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vsra
+R11
+!i10b 1
+!s100 4zUPRADZ:E8gn3[G6QEED1
+In<_NBO_8FWY2m0]?>B`ig3
+R1
+R2
+R12
+R13
+R14
+L0 265
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+vsranb
+R11
+!i10b 1
+!s100 bP]ELLi5V:bJHYeHQzY=K2
+IjTRE_bGocRWIYBU>K;W;43
+R1
+R2
+R12
+R13
+R14
+L0 234
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+vstall
+R0
+!i10b 1
+!s100 kSZKEHD00ki4KS9`6YVl02
+ICJK9L3SD2nJ@IibGnSF^f3
+R1
+R2
+w1427570566
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/stall.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/stall.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1427573097.733000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/stall.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/stall.v|
+!i113 1
+R10
+vstatusReg
+R0
+!i10b 1
+!s100 U_6n?EeJ[z?NYQn8ek;ik1
+IXK_`24@Xi5a8TJ1?DAPkG3
+R1
+R2
+w1427429270
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/statusReg.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/statusReg.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1427573097.803000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/statusReg.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/statusReg.v|
+!i113 1
+R10
+nstatus@reg
+vsub_div
+R0
+!i10b 1
+!s100 TFmj?5EGBCnS1Z[KW4K@42
+IfGzk1BBWN:3GF0FXiBd6n3
+R1
+R2
+R3
+R4
+R5
+L0 548
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vsub_premult
+R0
+!i10b 1
+!s100 iT0comgMfJlbSHkE5hZ>93
+IMiSL:0lCS1ojc=h;5SR8C2
+R1
+R2
+R3
+R4
+R5
+L0 259
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vtrinb
+R11
+!i10b 1
+!s100 dHaZlY>;VedL_GTELoHAl0
+IYzEA0Az?_MbC9WKom^h^[0
+R1
+R2
+R27
+R28
+R29
+L0 30
+R6
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 1
+R10
+vtwoscomplement
+R0
+!i10b 1
+!s100 G?2l`0^:GMAh[0hbAgE=l3
+ID6k`mhF<cLLQjHW<aY<D`2
+R1
+R2
+R3
+R4
+R5
+L0 475
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vwriteback
+R11
+!i10b 1
+!s100 aWPhcUC8KQabIH9??;lWh1
+IEelmBbBa0iaVHicndD8a02
+R1
+R2
+w1427294475
+8C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/writeback.v
+FC:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/writeback.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1427573096.432000
+!s107 C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/writeback.v|
+!s90 -reportprogress|300|-work|processorTSim|-stats=none|C:/Users/Jianan Li/Documents/Altera Projects/HW5_Processor/writeback.v|
+!i113 1
+R10
