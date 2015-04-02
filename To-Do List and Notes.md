@@ -1,7 +1,9 @@
 To-do:
 
 - Custom instructions: li, si, beq
+
 - Add conversion from $sp to $r29
+
 - Read Keyboard Input via polling
 	- Determine where to store the keyboard input: ram/regfile/special reg?
 
