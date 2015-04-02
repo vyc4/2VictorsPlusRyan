@@ -1,0 +1,15 @@
+To-do:
+
+- Custom instructions: li, si, beq
+- Add conversion from $sp to $r29
+- Read Keyboard Input via polling
+	- Determine where to store the keyboard input: ram/regfile/special reg?
+
+Notes:
+
+Stack pointer ($sp=$29): points to bottom of current frame
+
+Total memory: 4096 words (0x000-0xFFF)
+Display Memory: 300 words (0xE00-0xF2B)
+Data memory: starts at 0x000 going up
+Stack memory: starts at 0xDFF going down
