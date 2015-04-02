@@ -13,3 +13,4 @@ Total memory: 4096 words (0x000-0xFFF)
 Display Memory: 300 words (0xE00-0xF2B)
 Data memory: starts at 0x000 going up
 Stack memory: starts at 0xDFF going down
+
