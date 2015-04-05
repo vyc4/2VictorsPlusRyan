@@ -1,33 +1,18 @@
-To-do:
+### To-do
+======
+- Boundaries (via x-coordinate register maintenance)
+- Movement reversal (if mashing)
+- Slows down when holding down a button
 
-- Custom instructions: li, si, beq
-
-- Add conversion from $sp to $r29
-
-- Read Keyboard Input via polling
-	- Determine where to store the keyboard input: ram/regfile/special reg?
+## Next
+- Food
+- Growing Snake
 
 
-Notes:
-
+### Notes:
+=======
+## Register Assignments
 - R0 = zero
-- R1 = 	
-- R2 = 
-- R3 = 
-- R4 = 
-- R5 = 
-- R6 = 
-- R7 = 
-- R8 = 
-- R9 = 
-- R10=
-- R11=
-- R12=
-- R13=
-- R14=
-- R15=
-- R16= RESET R30 BACK TO R24 IF SOME SHIT DOESNT WORK OUT
-- R17=
 - R18=
 - R19=
 - R20= 	up
@@ -43,6 +28,7 @@ Notes:
 - R30=	direction of snake
 - R31= 	jal address
 
+## Custom Instructions
 - beq 10000 $rd, $rs, N
 - custr1 01001
 - custr2 01010
@@ -58,9 +44,11 @@ Notes:
 - custj1 10111 (ckk - check keyboard input)
 - custj2 11000
 
+## Memory Allocation
 - Data Memory(RAM)
 	- Total memory: 4096 words (0x000-0xFFF)
-	- Display Memory: 300 words (0xE00-0xF2B)
+	- Display Memory: 300 words (0xC00-0xD2C)
+	- Grid memory: 300 words (0xA00-0xB2C)
 	- Data memory: starts at 0x000 going up
 		- 0xA00 to 0xB2C is grid memory
 	- Stack memory: starts at 0xDFF going down
