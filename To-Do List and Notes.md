@@ -10,7 +10,6 @@ To-do:
 
 Notes:
 
-- Stack pointer ($sp=$29): points to bottom of current frame
 - R0 = zero
 - R1 = 	
 - R2 = 
@@ -36,12 +35,12 @@ Notes:
 - R22=
 - R23=
 - R24=
-- R25=
-- R26=
-- R27=
-- R28=
+- R25=	location of head of snake
+- R26=	color of snake
+- R27=	color of food
+- R28=	length of snake
 - R29=	stack pointer (bottom of frame)
-- R30=
+- R30=	direction of snake
 - R31= 	jal address
 
 - beq 10000 $rd, $rs, N
@@ -63,5 +62,6 @@ Notes:
 	- Total memory: 4096 words (0x000-0xFFF)
 	- Display Memory: 300 words (0xE00-0xF2B)
 	- Data memory: starts at 0x000 going up
+		- 0xA00 to 0xB2C is grid memory
 	- Stack memory: starts at 0xDFF going down
 
