@@ -1,30 +1,58 @@
-To-do:
-
-- Custom instructions: li, si, beq
-
-- Add conversion from $sp to $r29
-
-- Read Keyboard Input via polling
-	- Determine where to store the keyboard input: ram/regfile/special reg?
-
+# To-do
+- Boundaries (via x-coordinate register maintenance)
+- Movement reversal (if mashing)
+- Slows down when holding down a button
+- Flashing square
 - Random number generator?
 
-Notes:
+## Next
+- Food
+- Growing Snake
 
-- Stack pointer ($sp=$29): points to bottom of current frame
 
+# Notes:
+## Register Assignments
+- R0 = zero
+- R18=
+- R19=
+- R20= 	up
+- R21=	down
+- R22=	right
+- R23=	left
+- R24=	oldReg
+- R25=	location of head of snake
+- R26=	color of snake
+- R27=	color of food
+- R28=	length of snake
+- R29=	stack pointer (bottom of frame)
+- R30=	direction of snake
+- R31= 	jal address
+
+## Custom Instructions
+- beq 10000 $rd, $rs, N
+- custr1 01001
+- custr2 01010
+- custr3 01011
+- custr4 01100
+- custr5 01101
+- custr6 01110
+- curst7 01111
+- custi1 10001 $rd, $rs, N
+- custi2 10010 $rd, $rs, N
+- custi3 10011 $rd, $rs, N
+- custi4 10100 $rd, $rs, N
+- custj1 10111 (ckk - check keyboard input)
+- custj2 11000
+
+## Memory Allocation
 - Data Memory(RAM)
 	- Total memory: 4096 words (0x000-0xFFF)
-	- Keypress memory: 1 word (0xFFF)
-	- Display Memory: 300 words (0xE00-0xF2B)
-	- Data memory: starts at 0x000 going up
-	- Stack memory: starts at 0xDFF going down
+	- Display Memory: 300 words (0xC00-0xD2C)
+	- Grid memory: 300 words (0xA00-0xB2C)
 
-- PS2 Keyboard data values:
+## PS2 Keyboard data values:
 	- Up: 75	(0111 0101)
 	- Down: 72	(0111 0010)
 	- Left: 6b	(0110 1011)
 	- Right: 74	(0111 0100)
-	- Space: 29	
-	- ESC: 76
 
