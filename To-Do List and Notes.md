@@ -2,6 +2,7 @@
 - Boundaries (via x-coordinate register maintenance)
 - Movement reversal (if mashing)
 - Slows down when holding down a button
+- Flashing square
 
 ## Next
 - Food
