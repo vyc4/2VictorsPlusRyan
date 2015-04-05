@@ -1,5 +1,4 @@
-### To-do
-======
+# To-do
 - Boundaries (via x-coordinate register maintenance)
 - Movement reversal (if mashing)
 - Slows down when holding down a button
@@ -9,8 +8,7 @@
 - Growing Snake
 
 
-### Notes:
-=======
+# Notes:
 ## Register Assignments
 - R0 = zero
 - R18=
