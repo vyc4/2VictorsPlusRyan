@@ -12,7 +12,24 @@ Notes:
 
 - Stack pointer ($sp=$29): points to bottom of current frame
 - R0 = zero
-- - R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
+- R0 = zero
 
 - beq 10000 $rd, $rs, N
 - custr1 01001
