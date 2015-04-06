@@ -12,21 +12,21 @@
 
 # Notes:
 ## Register Assignments
-- R0 = zero
-- R18=
-- R19=
-- R20= 	up
-- R21=	down
-- R22=	right
-- R23=	left
-- R24=	oldReg
-- R25=	location of head of snake
-- R26=	color of snake
-- R27=	color of food
-- R28=	length of snake
-- R29=	stack pointer (bottom of frame)
-- R30=	direction of snake
-- R31= 	jal address
+- R0  = zero
+- R18 =
+- R19 =
+- R20 = up key value
+- R21 = down key value
+- R22 = right key value
+- R23 = left key value
+- R24 = old direction
+- R25 = location of snake head
+- R26 = color of snake
+- R27 = color of food
+- R28 = length of snake
+- R29 = stack pointer (bottom of frame)
+- R30 = keyboard input (U/D/L/R)
+- R31 = jal address
 
 ## Custom Instructions
 - beq 10000 $rd, $rs, N
