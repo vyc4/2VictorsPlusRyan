@@ -14,6 +14,7 @@
 ## Register Assignments
 - r0  = zero
 
+- r11 = score (0-???)
 - r12 = last keyboard input
 - r13 = do not subtract One flag (after eating food)
 - r14 = random number memory location
@@ -56,7 +57,8 @@
 	- Display Memory: 300 words (0xE00 - 0xF2B)
 	- Stack Region: (0xDFF -> 0xB2C)
 	- Data Memory: (0x000 -> B2B)
-		- Free use: (0x000 - 0x9FF)
+		- Free use (food loc/color): (0x000 - 0x9FE)
+		- Next Food starting location: (0x9FF)
 		- Grid memory: 300 words (0xA00 - 0xB2B)
 
 ## PS2 Keyboard data values:

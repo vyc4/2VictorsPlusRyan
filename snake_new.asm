@@ -87,7 +87,12 @@ addi $r6, $r0, 4
 checkInputDelayLoop:
 beq $r1, $r15, checkInputDelayFinish
 custj1 0				# put the keyboard input value into $r29
-bne $r29, $r12, checkKeyInput	# only check the keyboard input if it’s different from last time
+# bne $r29, $r12, checkKeyInput	# only check the keyboard input if it’s different from last time
+
+beq $r29, $r25, checkUpKey
+beq $r29, $r26, checkDownKey
+beq $r29, $r27, checkLeftKey
+beq $r29, $r28, checkRightKey
 
 checkInputDelayLoopCont:
 addi $r1, $r1, 1
@@ -103,12 +108,12 @@ jr $r31
 
 ################
 
-checkKeyInput:
-beq $r29, $r25, checkUpKey
-beq $r29, $r26, checkDownKey
-beq $r29, $r27, checkLeftKey
-beq $r29, $r28, checkRightKey
-j checkInputDelayLoopCont		# if the user accidentally hits some other key, nothing to do
+#checkKeyInput:
+#beq $r29, $r25, checkUpKey
+#beq $r29, $r26, checkDownKey
+#beq $r29, $r27, checkLeftKey
+#beq $r29, $r28, checkRightKey
+#j checkInputDelayLoopCont		# if the user accidentally hits some other key, nothing to do
 
 checkUpKey:			
 beq $r24, $r3, turnNotValid		# Up key press is only valid if the current snake
