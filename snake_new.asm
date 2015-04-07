@@ -70,7 +70,6 @@ addi $r6, $r0, 4
 checkInputDelayLoop:
 beq $r1, $r15, checkInputDelayFinish
 custj1 0				# put the keyboard input value into $r29
-# bne $r29, $r12, checkKeyInput	# only check the keyboard input if it’s different from last time
 
 beq $r29, $r25, checkUpKey
 beq $r29, $r26, checkDownKey
@@ -82,69 +81,64 @@ addi $r1, $r1, 1
 j checkInputDelayLoop
 
 checkInputDelayFinish:
-beq $r7, $r0, notCopyDirection
+beq $r7, $r0, notCopyDirection	# if $r7 still stores 0, then no new direction, do not copy into $r24
 addi $r24, $r7, 0		# copy the temporary direction into the snake direction register
 
 notCopyDirection:
-addi $r12, $r29, 0		# store the current keyboard input into the last keyboard input reg
 jr $r31
 
 ################
 
-#checkKeyInput:
-#beq $r29, $r25, checkUpKey
-#beq $r29, $r26, checkDownKey
-#beq $r29, $r27, checkLeftKey
-#beq $r29, $r28, checkRightKey
-#j checkInputDelayLoopCont		# if the user accidentally hits some other key, nothing to do
+checkUpKey:	
+nop					# 3 x nops to balance the beq delay
+nop
+nop		
+beq $r24, $r5, upTurnValid1
+beq $r24, $r6, upTurnValid2
+j checkInputDelayLoopCont
 
-checkUpKey:			
-beq $r24, $r3, turnNotValid		# Up key press is only valid if the current snake
-beq $r24, $r4, turnNotValid 	# direction is left or right
-beq $r24, $r5, upTurnValid
-beq $r24, $r6, upTurnValid
-j checkUpKey				# $r24 must be 1-4 so program should not reach this line
-
-checkDownKey:			
-beq $r24, $r3, turnNotValid		# Down key press is only valid if the current snake
-beq $r24, $r4, turnNotValid 	# direction is left or right
-beq $r24, $r5, downTurnValid
-beq $r24, $r6, downTurnValid
-j checkDownKey				# $r24 must be 1-4 so program should not reach this line
+checkDownKey:	
+nop					# 2 x nops to balance the beq delay
+nop		
+beq $r24, $r5, downTurnValid1
+beq $r24, $r6, downTurnValid2
+j checkInputDelayLoopCont
 
 checkLeftKey:
-beq $r24, $r3, leftTurnValid	# Left key press is only valid if the current snake
-beq $r24, $r4, leftTurnValid	# direction is up or down
-beq $r24, $r5, turnNotValid
-beq $r24, $r6, turnNotValid
-j checkLeftKey				# $r24 must be 1-4 so program should not reach this line
+nop					# 1 x nops to balance the beq delay
+beq $r24, $r3, leftTurnValid1	# Left key press is only valid if the current snake
+beq $r24, $r4, leftTurnValid2	# direction is up or down
+j checkInputDelayLoopCont
 
 checkRightKey:
-beq $r24, $r3, rightTurnValid	# Right key press is only valid if the current snake
-beq $r24, $r4, rightTurnValid	# direction is up or down
-beq $r24, $r5, turnNotValid
-beq $r24, $r6, turnNotValid
-j checkRightKey				# $r24 must be 1-4 so program should not reach this line
+beq $r24, $r3, rightTurnValid1	# Right key press is only valid if the current snake
+beq $r24, $r4, rightTurnValid2	# direction is up or down
+j checkInputDelayLoopCont
 
 ################
 
-upTurnValid:
-add $r7, $r3, $r0			# copy temporary direction into register $r7
+upTurnValid1:
+nop
+upTurnValid2:
+add $r7, $r3, $r0			# copy direction into temporary direction register $r7
 j checkInputDelayLoopCont
 
-downTurnValid:
+downTurnValid1:
+nop
+downTurnValid2:
 add $r7, $r4, $r0
 j checkInputDelayLoopCont
 
-leftTurnValid:
+leftTurnValid1:
+nop
+leftTurnValid2:
 add $r7, $r5, $r0
 j checkInputDelayLoopCont
 
-rightTurnValid:
+rightTurnValid1:
+nop
+rightTurnValid2:
 add $r7, $r6, $r0
-j checkInputDelayLoopCont
-
-turnNotValid:
 j checkInputDelayLoopCont
 
 ################################################################
@@ -153,8 +147,8 @@ moveSnake:
 addi $r30, $r30, -1
 sw $r31, 0($r30)
 
-jal updateSnakeHeadPos	# update snake head x, y, location
-jal collisionDetection	# check if the new head location is part of the snake or the food
+jal updateSnakeHeadPos		# update snake head x, y, location
+jal collisionDetection		# check if the new head location is part of the snake or the food
 					# if part of the snake, game over; if food, snake length ++
 beq $r13, $r0, subtractOne 	# previously “jal subtractOne”	
 

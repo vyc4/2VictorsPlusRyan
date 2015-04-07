@@ -17,7 +17,7 @@
 - r9  = score (least significant digit)
 - r10 = score 
 - r11 = score (most significant digit)
-- r12 = last keyboard input
+- r12 = 
 - r13 = do not subtract One flag (after eating food)
 - r14 = random number memory location
 - r15 = delay limit (how long we wait to check for keyboard input between each move)
