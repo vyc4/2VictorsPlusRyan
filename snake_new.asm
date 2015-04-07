@@ -1,26 +1,4 @@
 .data
-foodLoc01: 	.word 0x00000076
-foodCol01: 	.word 0x00000005
-foodLoc02: 	.word 0x00000100
-foodCol02: 	.word 0x00000004
-foodLoc03: 	.word 0x00000029
-foodCol03: 	.word 0x00000006
-foodLoc04: 	.word 0x00000110
-foodCol04: 	.word 0x00000001
-foodLoc05: 	.word 0x00000012
-foodCol05: 	.word 0x00000003
-foodLoc06: 	.word 0x00000045
-foodCol06: 	.word 0x00000001
-foodLoc07: 	.word 0x00000093
-foodCol07: 	.word 0x00000006
-foodLoc08: 	.word 0x00000072
-foodCol08: 	.word 0x00000005
-foodLoc09: 	.word 0x00000057
-foodCol09: 	.word 0x00000001
-foodLoc10: 	.word 0x00000102
-foodCol10: 	.word 0x00000005
-foodLoc11: 	.word 0x00000006
-foodCol11: 	.word 0x00000002
 
 .text
 
@@ -30,10 +8,15 @@ main:
 jal clearGrid
 
 ## init all global registers
-addi $r14, $r0, 0		# init random number location = 0
+
+addi $r9, $r0, 0			# init score = 0
+addi $r10, $r0, 0		# init score = 0
+addi $r11, $r0, 0		# init score = 0
+
+lw $r14, 0x9FF($r0)		# init random number location = memory[0x9FF]		
 
 addi $r1, $r0, 1
-sll $r15, $r1, 19		# init delay limit = 1<<19
+sll $r15, $r1, 18		# init delay limit = 1<<18
 
 addi $r19, $r0, 2		# init snake color = green
 addi $r20, $r0, 0x95		# init snake head loc = 0x95 (x=9, y=7)
@@ -60,7 +43,7 @@ sw $r1, 0x9FE($r20)
 ## place the first food
 jal placeFood			# the new food color and location are both determined in this procedure
 
-## refresh the display before the good starts
+## refresh the display before the game starts
 jal updateDispmem
 
 ################
@@ -264,11 +247,13 @@ collisionDetection:
 # $r22: snake head y
 # $r23: snake length
 
+addi $r3, $r0, 1			# $r3 set to 1 for later beq
 addi $r2, $r23, 1		# $r2 = snake length + 1 = food value
 
 lw $r1, 0xA00($r20)		# load from gridmem the new head location
 addi $r13, $r0, 0		# reset the flag in $r13 for subtract one
-beq $r1, $r0, collisionDetectionReturn	# if the new head location has value 0, no collision
+beq $r1, $r0, collisionDetectionReturn		# if the new head location has value 0, no collision
+beq $r1, $r3, collisionDetectionReturn		# if the new head location has value 1 (snake tail), no collision
 beq $r1, $r2, snakeGrowth	# if the new head location has value snake length + 1, which is a food
 j gameover			# collision, game over
 
@@ -284,6 +269,9 @@ sw $r31, 0($r30)
 addi $r13, $r0, 1		# set a flag in $r13 for not subtract one
 addi $r23, $r23, 1		# snake length ++
 addi $r19, $r17, 0		# snake color = food color
+
+jal incrementScore		# see below
+
 jal placeFood
 
 lw $r31, 0($r30)		# restore $r31
@@ -291,7 +279,27 @@ addi $r30, $r30, 1
 jr $r31
 
 ########
+incrementScore:
+addi $r1, $r0, 9			# store a value 9 in $r1
+beq $r9, $r1, lastDigit9	# check the least significant digit first
+addi $r9, $r9, 1			# increment $r9 (least significant) by 1
 
+incrementScoreDone:
+jr $r31
+
+lastDigit9:
+beq $r10, $r1, lastTwoDigit9
+addi $r10, $r10, 1		# increment $r10 (middle) by 1
+addi $r9, $r0, 0			# set $r9 to 0
+j incrementScoreDone
+
+lastTwoDigit9:
+addi $r11, $r11, 1		# increment $r11 (most significant) by 1
+addi $r10, $r0, 0		# set $r10 to 0
+addi $r9, $r0, 0			# set $r9 to 0
+j incrementScoreDone
+
+########
 placeFood:
 # $r14: random number location
 
@@ -314,6 +322,7 @@ addi $r17, $r1, 0
 sw $r16, 0xA00($r18)		# store the food value at food location in gridmem 
 
 addi $r14, $r14, 2		# increment the random number counter by 2	
+sw $r14, 0x9FF($r0)		# store random number memory location to memory[0x9FF]
 jr $r31
 
 gameover:

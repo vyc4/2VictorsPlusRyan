@@ -14,7 +14,9 @@
 ## Register Assignments
 - r0  = zero
 
-- r11 = score (0-???)
+- r9  = score (least significant digit)
+- r10 = score 
+- r11 = score (most significant digit)
 - r12 = last keyboard input
 - r13 = do not subtract One flag (after eating food)
 - r14 = random number memory location
