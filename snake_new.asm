@@ -12,6 +12,7 @@ jal clearGrid
 addi $r9, $r0, 0			# init score = 0
 addi $r10, $r0, 0		# init score = 0
 addi $r11, $r0, 0		# init score = 0
+addi $r12, $r0, 0		# init score = 0
 
 lw $r14, 0x9FF($r0)		# init random number location = memory[0x9FF]		
 
@@ -52,11 +53,23 @@ jal updateDispmem
 ## a variable
 
 gameloop:
-
+jal checkSpeed
 jal checkInputDelay
 jal moveSnake
 jal updateDispmem
 j gameloop
+
+################################################################
+checkSpeed:
+addi $r1, $r0, 10		# change this value to set game difficulty
+beq $r12, $r1, increaseSpeed
+jr $r31
+
+increaseSpeed:
+addi $r12, $r0, 0		# reset the score to 0
+sra $r2, $r15, 2			# calculate 1/4 of the delay (shift right by 2 == divide by 4)
+sub $r15, $r15, $r2		# new delay is 0.75 of the previous delay
+jr $r31
 
 ################################################################
 
@@ -274,6 +287,7 @@ jr $r31
 
 ########
 incrementScore:
+addi $r12, $r12, 1		# increment the total score by 1
 addi $r1, $r0, 9			# store a value 9 in $r1
 beq $r9, $r1, lastDigit9	# check the least significant digit first
 addi $r9, $r9, 1			# increment $r9 (least significant) by 1
