@@ -1,0 +1,103 @@
+Restore Archived Project report for skeleton
+Tue Mar 17 15:11:01 2015
+Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Tue Mar 17 15:11:01 2015 ;
+; Revision Name                   ; skeleton                              ;
+; Top-level Entity Name           ; skeleton                              ;
+; Family                          ; Cyclone II                            ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Warning (13177): Your design targets the device family "Cyclone II". The specified family is not a valid device family, is not installed, or is not supported in this version of the Quartus II software. If you restored a project from an archived version, your project was successfully restored, but you still must specify or install a supported device family.
+Info (13198): Your project was successfully restored, but the device information in the Flow Summary report cannot be updated until the design targets a supported device family.
+Info: Successfully restored 'C:/Users/Jianan Li/Desktop/skeleton.qar' into the 'C:\\Users\\Jianan Li\\Documents\\Altera Projects\\HW5_Processor/' directory
+Info: Generated report 'skeleton.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/altera/14.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II 64-Bit Shell was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 338 megabytes
+    Info: Processing ended: Tue Mar 17 15:11:01 2015
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------------------------------------+
+; Files Restored                                                         ;
++------------------------------------------------------------------------+
+; File Name                                                              ;
++------------------------------------------------------------------------+
+; Altera_UP_PS2_Command_Out.v                                            ;
+; Altera_UP_PS2_Data_In.v                                                ;
+; Documents/Duke/Teaching/ECE 350/Quartus9Projects/skeleton/skeleton.dpf ;
+; Hexadecimal_To_Seven_Segment.v                                         ;
+; PS2_Controller.v                                                       ;
+; PS2_Interface.v                                                        ;
+; assignment_defaults.qdf                                                ;
+; dmem.cmp                                                               ;
+; dmem.mif                                                               ;
+; dmem.qip                                                               ;
+; dmem.v                                                                 ;
+; dmem_inst.v                                                            ;
+; imem.cmp                                                               ;
+; imem.mif                                                               ;
+; imem.qip                                                               ;
+; imem.v                                                                 ;
+; imem_inst.v                                                            ;
+; lcd.sv                                                                 ;
+; pll.bsf                                                                ;
+; pll.cmp                                                                ;
+; pll.ppf                                                                ;
+; pll.qip                                                                ;
+; pll.v                                                                  ;
+; processor.v                                                            ;
+; skeleton.qpf                                                           ;
+; skeleton.qsf                                                           ;
+; skeleton.v                                                             ;
++------------------------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

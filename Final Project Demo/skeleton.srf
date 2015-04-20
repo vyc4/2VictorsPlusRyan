@@ -1,0 +1,5 @@
+{ "" "" "" "Warning (10034): Output port \"lcd_data\" at processor.v(15) has no driver" {  } {  } 0 10034 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Warning (10034): Output port \"lcd_write\" at processor.v(14) has no driver" {  } {  } 0 10034 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "*" {  } {  } 0 292013 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "*" {  } {  } 0 20028 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "*" {  } {  } 0 15400 "" 0 0 "Quartus II" 0 -1 0 ""}

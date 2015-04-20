@@ -1,0 +1,80 @@
+MIF/HEX Update report for skeleton
+Fri Apr 10 14:15:42 2015
+Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Fri Apr 10 14:15:42 2015 ;
+; Revision Name         ; skeleton                              ;
+; Top-level Entity Name ; skeleton                              ;
+; Family                ; Cyclone IV E                          ;
+; Device                ; EP4CE115F29C7                         ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; MIF/HEX Update Processed Files                                             ;
++----------------------------------------------------------------------------+
+; File Name                                                                  ;
++----------------------------------------------------------------------------+
+; C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/snake_new.dmem.mif ;
+; C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/snake_new.imem.mif ;
++----------------------------------------------------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit MIF/HEX Update
+    Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+    Info: Processing started: Fri Apr 10 14:15:41 2015
+Info: Command: quartus_cdb skeleton -c skeleton --update_mif
+Warning (39023): Can't find Memory Initialization File imem.mif -- skipped updates for this file
+Warning (39023): Can't find Memory Initialization File dmem.mif -- skipped updates for this file
+Warning (113028): 2096 out of 4096 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported.
+    Warning (113027): Addresses ranging from 2000 to 4095 are not initialized
+Warning (113028): 3878 out of 4096 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported.
+    Warning (113027): Addresses ranging from 218 to 4095 are not initialized
+Info (39024): Processed the following Memory Initialization File(s)
+    Info (39025): Processed Memory Initialization File C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/snake_new.dmem.mif
+    Info (39025): Processed Memory Initialization File C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/snake_new.imem.mif
+Info: Quartus II 64-Bit MIF/HEX Update was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 656 megabytes
+    Info: Processing ended: Fri Apr 10 14:15:42 2015
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

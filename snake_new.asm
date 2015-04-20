@@ -311,9 +311,13 @@ j incrementScoreDone
 placeFood:
 # $r14: random number location
 
+lw $r3, 0x1($r14)		# load from memory location $r14+1; this is the new food color
+beq $r19, $r3, placeFoodCont	# if the new food color == current snake color, try the next food
 lw $r1, 0x0($r14)		# load from memory location $r14; this value might be used as the new food loc
 lw $r2, 0xA00($r1)		# check if this new food loc is already occupied by part of the snake
 beq $r2, $r0, placeFoodValid	# if the new loc has value 0, then the location is valid
+
+placeFoodCont:
 addi $r14, $r14, 2		# if loc not valid, increment $r14 by two (skip the food color value)
 j placeFood
 

@@ -1,0 +1,40 @@
+Quartus II Archive log --	C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/skeleton.qarlog
+
+Archive:	C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/skeleton.qar
+Date:		Sun Mar 29 12:36:18 2015
+Quartus II 64-Bit		14.1.0 Build 186 12/03/2014 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/Altera_UP_PS2_Command_Out.v
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/Altera_UP_PS2_Data_In.v
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/Hexadecimal_To_Seven_Segment.v
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/PS2_Controller.v
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/PS2_Interface.v
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/SimpleClockTest.vwf
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/assignment_defaults.qdf
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/db/skeleton.sim.cvwf
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/dmem.cmp
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/dmem.mif
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/dmem.qip
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/dmem.v
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/dmem_inst.v
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/imem.cmp
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/imem.mif
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/imem.qip
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/imem.v
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/imem_inst.v
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/lcd.sv
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/pll.bsf
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/pll.cmp
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/pll.ppf
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/pll.qip
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/pll.v
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/processor.v
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/skeleton.qpf
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/skeleton.qsf
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/skeleton.v
+C:/Users/Jianan Li/Documents/Altera Projects/HW5_Submit/skeleton_assignment_defaults.qdf
+	======= Total: 29 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

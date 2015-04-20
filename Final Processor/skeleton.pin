@@ -1,0 +1,557 @@
+ -- Copyright (C) 1991-2010 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		3.3V
+ --					Bank 2:		3.3V
+ --					Bank 3:		3.3V
+ --					Bank 4:		3.3V
+ --					Bank 5:		3.3V
+ --					Bank 6:		3.3V
+ --					Bank 7:		3.3V
+ --					Bank 8:		3.3V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --           	    either individually through a 10k Ohm resistor to GND or tie all pins
+ --           	    together and connect through a single 10k Ohm resistor to GND.
+ --           	    For non-transceiver I/O banks, connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+CHIP  "skeleton"  ASSIGNED TO AN: EP2C35F484C6
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+GND                          : A1        : gnd    :                   :         :           :                
+VCCIO3                       : A2        : power  :                   : 3.3V    : 3         :                
+GND*                         : A3        :        :                   :         : 3         :                
+GND*                         : A4        :        :                   :         : 3         :                
+LEDR[16]                     : A5        : output : 3.3-V LVTTL       :         : 3         : N              
+debug_word[16]               : A6        : output : 3.3-V LVTTL       :         : 3         : N              
+debugDataMasked[26]          : A7        : output : 3.3-V LVTTL       :         : 3         : N              
+debug_addr[9]                : A8        : output : 3.3-V LVTTL       :         : 3         : N              
+LEDG[4]                      : A9        : output : 3.3-V LVTTL       :         : 3         : N              
+fetchInstPC[28]              : A10       : output : 3.3-V LVTTL       :         : 3         : N              
+debug_word[0]                : A11       : output : 3.3-V LVTTL       :         : 3         : N              
+GND+                         : A12       :        :                   :         : 4         :                
+debugDataMasked[31]          : A13       : output : 3.3-V LVTTL       :         : 4         : N              
+debug_word[15]               : A14       : output : 3.3-V LVTTL       :         : 4         : N              
+fetchInstPC[5]               : A15       : output : 3.3-V LVTTL       :         : 4         : N              
+debug_addr[5]                : A16       : output : 3.3-V LVTTL       :         : 4         : N              
+fetchInstPC[8]               : A17       : output : 3.3-V LVTTL       :         : 4         : N              
+statusRegRdata[27]           : A18       : output : 3.3-V LVTTL       :         : 4         : N              
+debugDataMasked[5]           : A19       : output : 3.3-V LVTTL       :         : 4         : N              
+LEDR[12]                     : A20       : output : 3.3-V LVTTL       :         : 4         : N              
+VCCIO4                       : A21       : power  :                   : 3.3V    : 4         :                
+GND                          : A22       : gnd    :                   :         :           :                
+VCCIO1                       : AA1       : power  :                   : 3.3V    : 1         :                
+GND                          : AA2       : gnd    :                   :         :           :                
+GND*                         : AA3       :        :                   :         : 8         :                
+HEX3[1]                      : AA4       : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AA5       :        :                   :         : 8         :                
+GND*                         : AA6       :        :                   :         : 8         :                
+debugDataMasked[21]          : AA7       : output : 3.3-V LVTTL       :         : 8         : N              
+HEX6[4]                      : AA8       : output : 3.3-V LVTTL       :         : 8         : N              
+fetchInstPC[20]              : AA9       : output : 3.3-V LVTTL       :         : 8         : N              
+debugDataMasked[19]          : AA10      : output : 3.3-V LVTTL       :         : 8         : N              
+debug_word[19]               : AA11      : output : 3.3-V LVTTL       :         : 8         : N              
+debug_word[10]               : AA12      : output : 3.3-V LVTTL       :         : 7         : N              
+debug_addr[7]                : AA13      : output : 3.3-V LVTTL       :         : 7         : N              
+HEX2[2]                      : AA14      : output : 3.3-V LVTTL       :         : 7         : N              
+HEX2[6]                      : AA15      : output : 3.3-V LVTTL       :         : 7         : N              
+LEDR[3]                      : AA16      : output : 3.3-V LVTTL       :         : 7         : N              
+HEX1[3]                      : AA17      : output : 3.3-V LVTTL       :         : 7         : N              
+KEY[2]                       : AA18      : input  : 3.3-V LVTTL       :         : 7         : N              
+HEX4[0]                      : AA19      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AA20      :        :                   :         : 7         :                
+GND                          : AA21      : gnd    :                   :         :           :                
+VCCIO6                       : AA22      : power  :                   : 3.3V    : 6         :                
+GND                          : AB1       : gnd    :                   :         :           :                
+VCCIO8                       : AB2       : power  :                   : 3.3V    : 8         :                
+LEDR[11]                     : AB3       : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AB4       :        :                   :         : 8         :                
+GND*                         : AB5       :        :                   :         : 8         :                
+statusRegRdata[31]           : AB6       : output : 3.3-V LVTTL       :         : 8         : N              
+LEDG[0]                      : AB7       : output : 3.3-V LVTTL       :         : 8         : N              
+debugDataMasked[23]          : AB8       : output : 3.3-V LVTTL       :         : 8         : N              
+debug_word[14]               : AB9       : output : 3.3-V LVTTL       :         : 8         : N              
+debug_word[1]                : AB10      : output : 3.3-V LVTTL       :         : 8         : N              
+LEDR[8]                      : AB11      : output : 3.3-V LVTTL       :         : 8         : N              
+statusRegRdata[7]            : AB12      : output : 3.3-V LVTTL       :         : 7         : N              
+statusRegRdata[14]           : AB13      : output : 3.3-V LVTTL       :         : 7         : N              
+HEX2[4]                      : AB14      : output : 3.3-V LVTTL       :         : 7         : N              
+HEX2[5]                      : AB15      : output : 3.3-V LVTTL       :         : 7         : N              
+LEDR[2]                      : AB16      : output : 3.3-V LVTTL       :         : 7         : N              
+HEX2[1]                      : AB17      : output : 3.3-V LVTTL       :         : 7         : N              
+HEX3[2]                      : AB18      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AB19      :        :                   :         : 7         :                
+GND*                         : AB20      :        :                   :         : 7         :                
+VCCIO7                       : AB21      : power  :                   : 3.3V    : 7         :                
+GND                          : AB22      : gnd    :                   :         :           :                
+VCCIO2                       : B1        : power  :                   : 3.3V    : 2         :                
+GND                          : B2        : gnd    :                   :         :           :                
+GND*                         : B3        :        :                   :         : 3         :                
+HEX5[6]                      : B4        : output : 3.3-V LVTTL       :         : 3         : N              
+LEDR[14]                     : B5        : output : 3.3-V LVTTL       :         : 3         : N              
+debugDataMasked[9]           : B6        : output : 3.3-V LVTTL       :         : 3         : N              
+debug_addr[4]                : B7        : output : 3.3-V LVTTL       :         : 3         : N              
+debugDataMasked[25]          : B8        : output : 3.3-V LVTTL       :         : 3         : N              
+debugDataMasked[16]          : B9        : output : 3.3-V LVTTL       :         : 3         : N              
+debugDataMasked[7]           : B10       : output : 3.3-V LVTTL       :         : 3         : N              
+debug_word[26]               : B11       : output : 3.3-V LVTTL       :         : 3         : N              
+GND+                         : B12       :        :                   :         : 4         :                
+debugAddrMasked[3]           : B13       : output : 3.3-V LVTTL       :         : 4         : N              
+debug_word[25]               : B14       : output : 3.3-V LVTTL       :         : 4         : N              
+debug_addr[10]               : B15       : output : 3.3-V LVTTL       :         : 4         : N              
+HEX1[0]                      : B16       : output : 3.3-V LVTTL       :         : 4         : N              
+debug_addr[6]                : B17       : output : 3.3-V LVTTL       :         : 4         : N              
+statusRegRdata[25]           : B18       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : B19       :        :                   :         : 4         :                
+GND*                         : B20       :        :                   :         : 4         :                
+GND                          : B21       : gnd    :                   :         :           :                
+VCCIO5                       : B22       : power  :                   : 3.3V    : 5         :                
+debugDataMasked[10]          : C1        : output : 3.3-V LVTTL       :         : 2         : N              
+debugDataMasked[24]          : C2        : output : 3.3-V LVTTL       :         : 2         : N              
+~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C3        : input  : 3.3-V LVTTL       :         : 2         : N              
+~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C4        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND                          : C5        : gnd    :                   :         :           :                
+VCCIO3                       : C6        : power  :                   : 3.3V    : 3         :                
+HEX7[1]                      : C7        : output : 3.3-V LVTTL       :         : 3         : N              
+GND                          : C8        : gnd    :                   :         :           :                
+debug_addr[11]               : C9        : output : 3.3-V LVTTL       :         : 3         : N              
+debugDataMasked[8]           : C10       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCIO3                       : C11       : power  :                   : 3.3V    : 3         :                
+VCCIO4                       : C12       : power  :                   : 3.3V    : 4         :                
+statusRegRdata[8]            : C13       : output : 3.3-V LVTTL       :         : 4         : N              
+debugDataMasked[4]           : C14       : output : 3.3-V LVTTL       :         : 4         : N              
+GND                          : C15       : gnd    :                   :         :           :                
+HEX0[3]                      : C16       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : C17       :        :                   :         : 4         :                
+GND*                         : C18       :        :                   :         : 4         :                
+debugDataMasked[20]          : C19       : output : 3.3-V LVTTL       :         : 5         : N              
+debugDataMasked[17]          : C20       : output : 3.3-V LVTTL       :         : 5         : N              
+debug_word[27]               : C21       : output : 3.3-V LVTTL       :         : 5         : N              
+debug_word[12]               : C22       : output : 3.3-V LVTTL       :         : 5         : N              
+debug_word[5]                : D1        : output : 3.3-V LVTTL       :         : 2         : N              
+debug_word[18]               : D2        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : D3        :        :                   :         : 2         :                
+debugDataMasked[11]          : D4        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : D5        :        :                   :         : 2         :                
+debugDataMasked[6]           : D6        : output : 3.3-V LVTTL       :         : 2         : N              
+debug_addr[0]                : D7        : output : 3.3-V LVTTL       :         : 3         : N              
+debug_addr[2]                : D8        : output : 3.3-V LVTTL       :         : 3         : N              
+debugDataMasked[22]          : D9        : output : 3.3-V LVTTL       :         : 3         : N              
+GND                          : D10       : gnd    :                   :         :           :                
+fetchInstPC[27]              : D11       : output : 3.3-V LVTTL       :         : 3         : N              
+GND+                         : D12       :        :                   :         : 3         :                
+GND                          : D13       : gnd    :                   :         :           :                
+HEX0[2]                      : D14       : output : 3.3-V LVTTL       :         : 4         : N              
+fetchInstPC[10]              : D15       : output : 3.3-V LVTTL       :         : 4         : N              
+fetchInstPC[31]              : D16       : output : 3.3-V LVTTL       :         : 4         : N              
+VCCIO4                       : D17       : power  :                   : 3.3V    : 4         :                
+GND                          : D18       : gnd    :                   :         :           :                
+GND*                         : D19       :        :                   :         : 5         :                
+GND*                         : D20       :        :                   :         : 5         :                
+debug_word[23]               : D21       : output : 3.3-V LVTTL       :         : 5         : N              
+debug_word[24]               : D22       : output : 3.3-V LVTTL       :         : 5         : N              
+LEDG[7]                      : E1        : output : 3.3-V LVTTL       :         : 2         : N              
+debug_word[17]               : E2        : output : 3.3-V LVTTL       :         : 2         : N              
+debugDataMasked[15]          : E3        : output : 3.3-V LVTTL       :         : 2         : N              
+debugDataMasked[27]          : E4        : output : 3.3-V LVTTL       :         : 2         : N              
+VCCD_PLL3                    : E5        : power  :                   : 1.2V    :           :                
+VCCA_PLL3                    : E6        : power  :                   : 1.2V    :           :                
+statusRegRdata[21]           : E7        : output : 3.3-V LVTTL       :         : 3         : N              
+debug_addr[3]                : E8        : output : 3.3-V LVTTL       :         : 3         : N              
+debug_word[9]                : E9        : output : 3.3-V LVTTL       :         : 3         : N              
+VCCIO3                       : E10       : power  :                   : 3.3V    : 3         :                
+fetchInstPC[26]              : E11       : output : 3.3-V LVTTL       :         : 3         : N              
+GND+                         : E12       :        :                   :         : 3         :                
+VCCIO4                       : E13       : power  :                   : 3.3V    : 4         :                
+HEX1[5]                      : E14       : output : 3.3-V LVTTL       :         : 4         : N              
+debugAddrMasked[11]          : E15       : output : 3.3-V LVTTL       :         : 4         : N              
+GNDA_PLL2                    : E16       : gnd    :                   :         :           :                
+GND_PLL2                     : E17       : gnd    :                   :         :           :                
+GND*                         : E18       :        :                   :         : 5         :                
+GND*                         : E19       :        :                   :         : 5         :                
+debug_word[7]                : E20       : output : 3.3-V LVTTL       :         : 5         : N              
+statusRegRdata[22]           : E21       : output : 3.3-V LVTTL       :         : 5         : N              
+debugDataMasked[30]          : E22       : output : 3.3-V LVTTL       :         : 5         : N              
+debugDataMasked[18]          : F1        : output : 3.3-V LVTTL       :         : 2         : N              
+fetchInstPC[25]              : F2        : output : 3.3-V LVTTL       :         : 2         : N              
+debugDataMasked[29]          : F3        : output : 3.3-V LVTTL       :         : 2         : N              
+debugDataMasked[12]          : F4        : output : 3.3-V LVTTL       :         : 2         : N              
+GND_PLL3                     : F5        : gnd    :                   :         :           :                
+GND_PLL3                     : F6        : gnd    :                   :         :           :                
+GNDA_PLL3                    : F7        : gnd    :                   :         :           :                
+HEX7[6]                      : F8        : output : 3.3-V LVTTL       :         : 3         : N              
+HEX7[5]                      : F9        : output : 3.3-V LVTTL       :         : 3         : N              
+debug_word[6]                : F10       : output : 3.3-V LVTTL       :         : 3         : N              
+debug_word[11]               : F11       : output : 3.3-V LVTTL       :         : 3         : N              
+mdException_LXM_out          : F12       : output : 3.3-V LVTTL       :         : 4         : N              
+debug_addr[8]                : F13       : output : 3.3-V LVTTL       :         : 4         : N              
+LEDR[0]                      : F14       : output : 3.3-V LVTTL       :         : 4         : N              
+debugDataMasked[3]           : F15       : output : 3.3-V LVTTL       :         : 4         : N              
+VCCA_PLL2                    : F16       : power  :                   : 1.2V    :           :                
+VCCD_PLL2                    : F17       : power  :                   : 1.2V    :           :                
+GND_PLL2                     : F18       : gnd    :                   :         :           :                
+GND                          : F19       : gnd    :                   :         :           :                
+debug_word[30]               : F20       : output : 3.3-V LVTTL       :         : 5         : N              
+fetchInstPC[29]              : F21       : output : 3.3-V LVTTL       :         : 5         : N              
+fetchInstPC[24]              : F22       : output : 3.3-V LVTTL       :         : 5         : N              
+statusRegRdata[16]           : G1        : output : 3.3-V LVTTL       :         : 2         : N              
+statusRegRdata[18]           : G2        : output : 3.3-V LVTTL       :         : 2         : N              
+debug_word[21]               : G3        : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : G4        : gnd    :                   :         :           :                
+debug_word[20]               : G5        : output : 3.3-V LVTTL       :         : 2         : N              
+statusRegRdata[20]           : G6        : output : 3.3-V LVTTL       :         : 2         : N              
+debug_word[29]               : G7        : output : 3.3-V LVTTL       :         : 3         : N              
+VCCINT                       : G8        : power  :                   : 1.2V    :           :                
+VCCIO3                       : G9        : power  :                   : 3.3V    : 3         :                
+GND                          : G10       : gnd    :                   :         :           :                
+fetchInstPC[30]              : G11       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCINT                       : G12       : power  :                   : 1.2V    :           :                
+GND                          : G13       : gnd    :                   :         :           :                
+VCCIO4                       : G14       : power  :                   : 3.3V    : 4         :                
+GND                          : G15       : gnd    :                   :         :           :                
+debugAddrMasked[4]           : G16       : output : 3.3-V LVTTL       :         : 4         : N              
+LEDR[15]                     : G17       : output : 3.3-V LVTTL       :         : 5         : N              
+HEX7[3]                      : G18       : output : 3.3-V LVTTL       :         : 5         : N              
+VCCIO5                       : G19       : power  :                   : 3.3V    : 5         :                
+debug_word[8]                : G20       : output : 3.3-V LVTTL       :         : 5         : N              
+debug_addr[1]                : G21       : output : 3.3-V LVTTL       :         : 5         : N              
+LEDR[9]                      : G22       : output : 3.3-V LVTTL       :         : 5         : N              
+debugDataMasked[13]          : H1        : output : 3.3-V LVTTL       :         : 2         : N              
+HEX7[2]                      : H2        : output : 3.3-V LVTTL       :         : 2         : N              
+statusRegRdata[17]           : H3        : output : 3.3-V LVTTL       :         : 2         : N              
+debug_word[31]               : H4        : output : 3.3-V LVTTL       :         : 2         : N              
+fetchInstPC[9]               : H5        : output : 3.3-V LVTTL       :         : 2         : N              
+statusRegRdata[24]           : H6        : output : 3.3-V LVTTL       :         : 2         : N              
+debug_word[22]               : H7        : output : 3.3-V LVTTL       :         : 3         : N              
+VCCINT                       : H8        : power  :                   : 1.2V    :           :                
+GND                          : H9        : gnd    :                   :         :           :                
+GND                          : H10       : gnd    :                   :         :           :                
+statusRegRdata[23]           : H11       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCINT                       : H12       : power  :                   : 1.2V    :           :                
+VCCINT                       : H13       : power  :                   : 1.2V    :           :                
+fetchInstPC[11]              : H14       : output : 3.3-V LVTTL       :         : 4         : N              
+statusRegRdata[26]           : H15       : output : 3.3-V LVTTL       :         : 4         : N              
+debugAddrMasked[5]           : H16       : output : 3.3-V LVTTL       :         : 5         : N              
+fetchInstPC[12]              : H17       : output : 3.3-V LVTTL       :         : 5         : N              
+fetchInstPC[13]              : H18       : output : 3.3-V LVTTL       :         : 5         : N              
+debugAddrMasked[7]           : H19       : output : 3.3-V LVTTL       :         : 5         : N              
+GND                          : H20       : gnd    :                   :         :           :                
+HEX0[5]                      : H21       : output : 3.3-V LVTTL       :         : 5         : N              
+HEX1[4]                      : H22       : output : 3.3-V LVTTL       :         : 5         : N              
+fetchInstPC[7]               : J1        : output : 3.3-V LVTTL       :         : 2         : N              
+PS2_DAT                      : J2        : bidir  : 3.3-V LVTTL       :         : 2         : N              
+statusRegRdata[15]           : J3        : output : 3.3-V LVTTL       :         : 2         : N              
+fetchInstPC[6]               : J4        : output : 3.3-V LVTTL       :         : 2         : N              
+HEX7[4]                      : J5        : output : 3.3-V LVTTL       :         : 2         : N              
+debug_word[13]               : J6        : output : 3.3-V LVTTL       :         : 2         : N              
+VCCIO2                       : J7        : power  :                   : 3.3V    : 2         :                
+GND                          : J8        : gnd    :                   :         :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+VCCINT                       : J10       : power  :                   : 1.2V    :           :                
+VCCINT                       : J11       : power  :                   : 1.2V    :           :                
+VCCINT                       : J12       : power  :                   : 1.2V    :           :                
+VCCINT                       : J13       : power  :                   : 1.2V    :           :                
+debugAddrMasked[8]           : J14       : output : 3.3-V LVTTL       :         : 4         : N              
+debugDataMasked[28]          : J15       : output : 3.3-V LVTTL       :         : 5         : N              
+VCCIO5                       : J16       : power  :                   : 3.3V    : 5         :                
+debugAddrMasked[9]           : J17       : output : 3.3-V LVTTL       :         : 5         : N              
+HEX0[4]                      : J18       : output : 3.3-V LVTTL       :         : 5         : N              
+HEX1[1]                      : J19       : output : 3.3-V LVTTL       :         : 5         : N              
+debugAddrMasked[1]           : J20       : output : 3.3-V LVTTL       :         : 5         : N              
+fetchInstPC[1]               : J21       : output : 3.3-V LVTTL       :         : 5         : N              
+HEX0[0]                      : J22       : output : 3.3-V LVTTL       :         : 5         : N              
+nCE                          : K1        :        :                   :         : 2         :                
+TCK                          : K2        : input  :                   :         : 2         :                
+GND                          : K3        : gnd    :                   :         :           :                
+DATA0                        : K4        : input  :                   :         : 2         :                
+TDI                          : K5        : input  :                   :         : 2         :                
+TMS                          : K6        : input  :                   :         : 2         :                
+GND                          : K7        : gnd    :                   :         :           :                
+VCCINT                       : K8        : power  :                   : 1.2V    :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+GND                          : K10       : gnd    :                   :         :           :                
+GND                          : K11       : gnd    :                   :         :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+GND                          : K13       : gnd    :                   :         :           :                
+VCCINT                       : K14       : power  :                   : 1.2V    :           :                
+GND                          : K15       : gnd    :                   :         :           :                
+GND                          : K16       : gnd    :                   :         :           :                
+debugAddrMasked[2]           : K17       : output : 3.3-V LVTTL       :         : 5         : N              
+debugAddrMasked[10]          : K18       : output : 3.3-V LVTTL       :         : 5         : N              
+GND                          : K19       : gnd    :                   :         :           :                
+debug_word[3]                : K20       : output : 3.3-V LVTTL       :         : 5         : N              
+statusRegRdata[9]            : K21       : output : 3.3-V LVTTL       :         : 5         : N              
+HEX2[0]                      : K22       : output : 3.3-V LVTTL       :         : 5         : N              
+GND+                         : L1        :        :                   :         : 2         :                
+GND+                         : L2        :        :                   :         : 2         :                
+VCCIO2                       : L3        : power  :                   : 3.3V    : 2         :                
+nCONFIG                      : L4        :        :                   :         : 2         :                
+TDO                          : L5        : output :                   :         : 2         :                
+DCLK                         : L6        :        :                   :         : 2         :                
+fetchInstPC[23]              : L7        : output : 3.3-V LVTTL       :         : 2         : N              
+HEX7[0]                      : L8        : output : 3.3-V LVTTL       :         : 2         : N              
+VCCINT                       : L9        : power  :                   : 1.2V    :           :                
+GND                          : L10       : gnd    :                   :         :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+GND                          : L12       : gnd    :                   :         :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GND                          : L15       : gnd    :                   :         :           :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+HEX1[6]                      : L17       : output : 3.3-V LVTTL       :         : 5         : N              
+statusRegRdata[1]            : L18       : output : 3.3-V LVTTL       :         : 5         : N              
+HEX2[3]                      : L19       : output : 3.3-V LVTTL       :         : 5         : N              
+VCCIO5                       : L20       : power  :                   : 3.3V    : 5         :                
+GND+                         : L21       :        :                   :         : 5         :                
+GND+                         : L22       :        :                   :         : 5         :                
+inclock                      : M1        : input  : 3.3-V LVTTL       :         : 1         : N              
+resetn                       : M2        : input  : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : M3        : power  :                   : 3.3V    : 1         :                
+GND                          : M4        : gnd    :                   :         :           :                
+HEX6[1]                      : M5        : output : 3.3-V LVTTL       :         : 1         : N              
+fetchInstPC[14]              : M6        : output : 3.3-V LVTTL       :         : 1         : N              
+statusRegRdata[13]           : M7        : output : 3.3-V LVTTL       :         : 1         : N              
+statusRegRdata[5]            : M8        : output : 3.3-V LVTTL       :         : 1         : N              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GND                          : M10       : gnd    :                   :         :           :                
+GND                          : M11       : gnd    :                   :         :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCCINT                       : M14       : power  :                   : 1.2V    :           :                
+LEDR[5]                      : M15       : output : 3.3-V LVTTL       :         : 6         : N              
+fetchInstPC[22]              : M16       : output : 3.3-V LVTTL       :         : 6         : N              
+MSEL0                        : M17       :        :                   :         : 6         :                
+LEDR[7]                      : M18       : output : 3.3-V LVTTL       :         : 6         : N              
+LEDR[6]                      : M19       : output : 3.3-V LVTTL       :         : 6         : N              
+VCCIO6                       : M20       : power  :                   : 3.3V    : 6         :                
+GND+                         : M21       :        :                   :         : 6         :                
+GND+                         : M22       :        :                   :         : 6         :                
+statusRegRdata[0]            : N1        : output : 3.3-V LVTTL       :         : 1         : N              
+fetchInstPC[18]              : N2        : output : 3.3-V LVTTL       :         : 1         : N              
+fetchInstPC[19]              : N3        : output : 3.3-V LVTTL       :         : 1         : N              
+HEX6[6]                      : N4        : output : 3.3-V LVTTL       :         : 1         : N              
+LEDG[1]                      : N5        : output : 3.3-V LVTTL       :         : 1         : N              
+statusRegRdata[4]            : N6        : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : N7        : gnd    :                   :         :           :                
+GND                          : N8        : gnd    :                   :         :           :                
+VCCINT                       : N9        : power  :                   : 1.2V    :           :                
+GND                          : N10       : gnd    :                   :         :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+GND                          : N12       : gnd    :                   :         :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+statusRegRdata[12]           : N15       : output : 3.3-V LVTTL       :         : 6         : N              
+GND                          : N16       : gnd    :                   :         :           :                
+MSEL1                        : N17       :        :                   :         : 6         :                
+CONF_DONE                    : N18       :        :                   :         : 6         :                
+GND                          : N19       : gnd    :                   :         :           :                
+nSTATUS                      : N20       :        :                   :         : 6         :                
+HEX6[3]                      : N21       : output : 3.3-V LVTTL       :         : 6         : N              
+fetchInstPC[16]              : N22       : output : 3.3-V LVTTL       :         : 6         : N              
+fetchInstPC[21]              : P1        : output : 3.3-V LVTTL       :         : 1         : N              
+debug_word[2]                : P2        : output : 3.3-V LVTTL       :         : 1         : N              
+fetchInstPC[0]               : P3        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : P4        :        :                   :         : 1         :                
+GND*                         : P5        :        :                   :         : 1         :                
+GND*                         : P6        :        :                   :         : 1         :                
+VCCIO1                       : P7        : power  :                   : 3.3V    : 1         :                
+GND                          : P8        : gnd    :                   :         :           :                
+GND                          : P9        : gnd    :                   :         :           :                
+VCCINT                       : P10       : power  :                   : 1.2V    :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+VCCINT                       : P12       : power  :                   : 1.2V    :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+VCCINT                       : P14       : power  :                   : 1.2V    :           :                
+fetchInstPC[4]               : P15       : output : 3.3-V LVTTL       :         : 6         : N              
+VCCIO6                       : P16       : power  :                   : 3.3V    : 6         :                
+debugAddrMasked[6]           : P17       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : P18       :        :                   :         : 6         :                
+statusRegRdata[6]            : P19       : output : 3.3-V LVTTL       :         : 6         : N              
+statusRegRdata[2]            : P20       : output : 3.3-V LVTTL       :         : 6         : N              
+debugDataMasked[1]           : P21       : output : 3.3-V LVTTL       :         : 6         : N              
+mdException_e_LXM            : P22       : output : 3.3-V LVTTL       :         : 6         : N              
+fetchInstPC[3]               : R1        : output : 3.3-V LVTTL       :         : 1         : N              
+fetchInstPC[17]              : R2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : R3        : gnd    :                   :         :           :                
+GND*                         : R4        :        :                   :         : 1         :                
+GND*                         : R5        :        :                   :         : 1         :                
+GND*                         : R6        :        :                   :         : 1         :                
+LEDG[3]                      : R7        : output : 3.3-V LVTTL       :         : 1         : N              
+fetchInstPC[15]              : R8        : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+statusRegRdata[19]           : R11       : output : 3.3-V LVTTL       :         : 8         : N              
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+LEDR[13]                     : R14       : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : R15       :        :                   :         : 7         :                
+HEX5[5]                      : R16       : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : R17       :        :                   :         : 6         :                
+statusRegRdata[30]           : R18       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : R19       :        :                   :         : 6         :                
+HEX0[6]                      : R20       : output : 3.3-V LVTTL       :         : 6         : N              
+fetchInstPC[2]               : R21       : output : 3.3-V LVTTL       :         : 6         : N              
+statusRegRdata[10]           : R22       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : T1        :        :                   :         : 1         :                
+GND*                         : T2        :        :                   :         : 1         :                
+GND*                         : T3        :        :                   :         : 1         :                
+VCCIO1                       : T4        : power  :                   : 3.3V    : 1         :                
+HEX4[2]                      : T5        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : T6        :        :                   :         : 1         :                
+HEX3[4]                      : T7        : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : T8        :        :                   :         : 8         :                
+VCCIO8                       : T9        : power  :                   : 3.3V    : 8         :                
+GND                          : T10       : gnd    :                   :         :           :                
+debugDataMasked[14]          : T11       : output : 3.3-V LVTTL       :         : 8         : N              
+VCCINT                       : T12       : power  :                   : 1.2V    :           :                
+GND                          : T13       : gnd    :                   :         :           :                
+VCCIO7                       : T14       : power  :                   : 3.3V    : 7         :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND*                         : T16       :        :                   :         : 7         :                
+GND_PLL4                     : T17       : gnd    :                   :         :           :                
+HEX3[0]                      : T18       : output : 3.3-V LVTTL       :         : 6         : N              
+VCCIO6                       : T19       : power  :                   : 3.3V    : 6         :                
+GND                          : T20       : gnd    :                   :         :           :                
+LEDR[1]                      : T21       : output : 3.3-V LVTTL       :         : 6         : N              
+LEDR[4]                      : T22       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : U1        :        :                   :         : 1         :                
+GND*                         : U2        :        :                   :         : 1         :                
+HEX5[1]                      : U3        : output : 3.3-V LVTTL       :         : 1         : N              
+LEDR[17]                     : U4        : output : 3.3-V LVTTL       :         : 1         : N              
+GND_PLL1                     : U5        : gnd    :                   :         :           :                
+VCCD_PLL1                    : U6        : power  :                   : 1.2V    :           :                
+VCCA_PLL1                    : U7        : power  :                   : 1.2V    :           :                
+GND*                         : U8        :        :                   :         : 8         :                
+HEX6[2]                      : U9        : output : 3.3-V LVTTL       :         : 8         : N              
+HEX6[5]                      : U10       : output : 3.3-V LVTTL       :         : 8         : N              
+GND+                         : U11       :        :                   :         : 8         :                
+GND+                         : U12       :        :                   :         : 8         :                
+statusRegRdata[11]           : U13       : output : 3.3-V LVTTL       :         : 7         : N              
+debug_word[28]               : U14       : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : U15       :        :                   :         : 7         :                
+VCCA_PLL4                    : U16       : power  :                   : 1.2V    :           :                
+VCCD_PLL4                    : U17       : power  :                   : 1.2V    :           :                
+HEX4[5]                      : U18       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : U19       :        :                   :         : 6         :                
+GND*                         : U20       :        :                   :         : 6         :                
+GND*                         : U21       :        :                   :         : 6         :                
+HEX4[3]                      : U22       : output : 3.3-V LVTTL       :         : 6         : N              
+HEX3[5]                      : V1        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : V2        :        :                   :         : 1         :                
+GND                          : V3        : gnd    :                   :         :           :                
+GND*                         : V4        :        :                   :         : 1         :                
+GND_PLL1                     : V5        : gnd    :                   :         :           :                
+GND                          : V6        : gnd    :                   :         :           :                
+GNDA_PLL1                    : V7        : gnd    :                   :         :           :                
+LEDR[10]                     : V8        : output : 3.3-V LVTTL       :         : 8         : N              
+LEDG[5]                      : V9        : output : 3.3-V LVTTL       :         : 8         : N              
+VCCIO8                       : V10       : power  :                   : 3.3V    : 8         :                
+debugDataMasked[2]           : V11       : output : 3.3-V LVTTL       :         : 8         : N              
+KEY[1]                       : V12       : input  : 3.3-V LVTTL       :         : 7         : N              
+VCCIO7                       : V13       : power  :                   : 3.3V    : 7         :                
+HEX0[1]                      : V14       : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : V15       :        :                   :         : 7         :                
+GNDA_PLL4                    : V16       : gnd    :                   :         :           :                
+GND                          : V17       : gnd    :                   :         :           :                
+GND_PLL4                     : V18       : gnd    :                   :         :           :                
+GND*                         : V19       :        :                   :         : 6         :                
+GND*                         : V20       :        :                   :         : 6         :                
+GND*                         : V21       :        :                   :         : 6         :                
+HEX3[6]                      : V22       : output : 3.3-V LVTTL       :         : 6         : N              
+HEX5[3]                      : W1        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : W2        :        :                   :         : 1         :                
+GND*                         : W3        :        :                   :         : 1         :                
+GND*                         : W4        :        :                   :         : 1         :                
+GND*                         : W5        :        :                   :         : 1         :                
+VCCIO8                       : W6        : power  :                   : 3.3V    : 8         :                
+HEX5[4]                      : W7        : output : 3.3-V LVTTL       :         : 8         : N              
+PS2_CLK                      : W8        : bidir  : 3.3-V LVTTL       :         : 8         : N              
+HEX6[0]                      : W9        : output : 3.3-V LVTTL       :         : 8         : N              
+GND                          : W10       : gnd    :                   :         :           :                
+debugDataMasked[0]           : W11       : output : 3.3-V LVTTL       :         : 8         : N              
+KEY[0]                       : W12       : input  : 3.3-V LVTTL       :         : 7         : N              
+GND                          : W13       : gnd    :                   :         :           :                
+HEX1[2]                      : W14       : output : 3.3-V LVTTL       :         : 7         : N              
+debug_word[4]                : W15       : output : 3.3-V LVTTL       :         : 7         : N              
+statusRegRdata[29]           : W16       : output : 3.3-V LVTTL       :         : 7         : N              
+VCCIO7                       : W17       : power  :                   : 3.3V    : 7         :                
+HEX4[1]                      : W18       : output : 3.3-V LVTTL       :         : 6         : N              
+GND                          : W19       : gnd    :                   :         :           :                
+~LVDS150p/nCEO~              : W20       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : W21       :        :                   :         : 6         :                
+HEX5[2]                      : W22       : output : 3.3-V LVTTL       :         : 6         : N              
+HEX4[6]                      : Y1        : output : 3.3-V LVTTL       :         : 1         : N              
+HEX5[0]                      : Y2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : Y3        :        :                   :         : 1         :                
+GND*                         : Y4        :        :                   :         : 1         :                
+statusRegRdata[28]           : Y5        : output : 3.3-V LVTTL       :         : 8         : N              
+HEX4[4]                      : Y6        : output : 3.3-V LVTTL       :         : 8         : N              
+KEY[3]                       : Y7        : input  : 3.3-V LVTTL       :         : 8         : N              
+GND                          : Y8        : gnd    :                   :         :           :                
+LEDG[6]                      : Y9        : output : 3.3-V LVTTL       :         : 8         : N              
+LEDG[2]                      : Y10       : output : 3.3-V LVTTL       :         : 8         : N              
+VCCIO8                       : Y11       : power  :                   : 3.3V    : 8         :                
+VCCIO7                       : Y12       : power  :                   : 3.3V    : 7         :                
+statusRegRdata[3]            : Y13       : output : 3.3-V LVTTL       :         : 7         : N              
+debugAddrMasked[0]           : Y14       : output : 3.3-V LVTTL       :         : 7         : N              
+GND                          : Y15       : gnd    :                   :         :           :                
+LEDG[8]                      : Y16       : output : 3.3-V LVTTL       :         : 7         : N              
+HEX3[3]                      : Y17       : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : Y18       :        :                   :         : 6         :                
+GND*                         : Y19       :        :                   :         : 6         :                
+GND*                         : Y20       :        :                   :         : 6         :                
+GND*                         : Y21       :        :                   :         : 6         :                
+GND*                         : Y22       :        :                   :         : 6         :                

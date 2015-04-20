@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="skeleton">
+		<CBX_INST_ENTRY INSTANCE_NAME="|skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|lpm_mux:Mux0" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|skeleton|processor:myprocessor|fetch:fetch1|imem:myimem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7h81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|skeleton|processor:myprocessor|memory:memory1|dmem:mydmem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vqc1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

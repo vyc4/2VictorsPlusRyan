@@ -1,0 +1,77 @@
+MIF/HEX Update report for skeleton
+Sun Apr 19 22:30:56 2015
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Sun Apr 19 22:30:56 2015 ;
+; Revision Name         ; skeleton                              ;
+; Top-level Entity Name ; skeleton                              ;
+; Family                ; Cyclone II                            ;
+; Device                ; EP2C35F484C6                          ;
++-----------------------+---------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; MIF/HEX Update Processed Files                                        ;
++-----------------------------------------------------------------------+
+; File Name                                                             ;
++-----------------------------------------------------------------------+
+; C:/Users/Jianan Li/Documents/Altera Projects/Final Processor/dmem.mif ;
+; C:/Users/Jianan Li/Documents/Altera Projects/Final Processor/imem.mif ;
++-----------------------------------------------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus II MIF/HEX Update
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Apr 19 22:30:55 2015
+Info: Command: quartus_cdb skeleton -c skeleton --update_mif
+Warning: 4096 out of 4096 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported.
+    Warning: Addresses ranging from 0 to 4095 are not initialized
+Warning: 4068 out of 4096 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported.
+    Warning: Addresses ranging from 28 to 4095 are not initialized
+Info: Processed the following Memory Initialization File(s)
+    Info: Processed Memory Initialization File C:/Users/Jianan Li/Documents/Altera Projects/Final Processor/dmem.mif
+    Info: Processed Memory Initialization File C:/Users/Jianan Li/Documents/Altera Projects/Final Processor/imem.mif
+Info: Quartus II MIF/HEX Update was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 213 megabytes
+    Info: Processing ended: Sun Apr 19 22:30:56 2015
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
